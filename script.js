@@ -9,3 +9,7 @@ function underline() {
 function italic() {
     document.execCommand('italic', true, null);
 }
+
+function color(value) {
+    document.execCommand('foreColor', true, value);
+}
