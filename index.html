@@ -39,16 +39,16 @@
         <input type="color" onchange="color(this.value)" class="colorInput" id="textColor" name="textColor">
 
         <!-- Text alignment (Left, Center, Right , and Justify) -->
-        <button class="button">
+        <button class="button" onclick="left()">
             <img src="Resources/left.png" style="width:23px;">
         </button>
-        <button class="button">
+        <button class="button" onclick="center()">
             <img src="Resources/center.png" style="width:23px;">
         </button>
-        <button class="button">
+        <button class="button" onclick="right()">
             <img src="Resources/right.png" style="width:22px;">
         </button>
-        <button class="button">
+        <button class="button" onclick="justify()">
             <img src="Resources/justify.png" style="width:22px;">
         </button>
 
@@ -62,7 +62,7 @@
     </div>
 
     <!-- Text area -->
-    <div class="textarea" contenteditable="true"></div>
+    <div class="textarea" id="textarea" contenteditable="true"></div>
     
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
