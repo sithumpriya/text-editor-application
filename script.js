@@ -32,3 +32,12 @@ function right() {
 function justify() {
     textarea.style.textAlign = "justify";
 }
+
+// Undo and Redo
+function undo() {
+    document.execCommand('undo', true, null);
+}
+
+function redo() {
+    document.execCommand('redo', true, null);
+}
